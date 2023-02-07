@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Rating state start -->
+    <div class="container">
+      <div class="content_wrapper">
+        <span class="svg_star_wrapper">
+          <img src="/images/icon-star.svg" alt="svg_star" />
+        </span>
+        <h1>How did we do?</h1>
+        <p>
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <div class="ratings_wrapper">
+          <button class="ratings" data-value="1">1</button>
+          <button class="ratings" data-value="2">2</button>
+          <button class="ratings" data-value="3">3</button>
+          <button class="ratings" data-value="4">4</button>
+          <button class="ratings" data-value="5">5</button>
+        </div>
+        <div class="button_wrapper"><button class="btn">Submit</button></div>
+      </div>
+    </div>
+
+    <div class="thanku_container container" style="display: none;">
+      <div class="thanku_content_wrapper content_wrapper" style="text-align: center;">
+        <div class="thanku_svg">
+          <img src="/images/illustration-thank-you.svg" alt="svg_star" />
+        </div>
+        <span class="ratings_text" style="display: none;"></span>
+        <h1>Thank you!</h1>
+        <p>
+          We appreciate you taking the time to give a rating. If you ever need more support, 
+          don’t hesitate to get in touch!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
